@@ -15,17 +15,10 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
+import static com.bridgelabz.OpenCSVService.STRING_ARRAY_SAMPLE;
 
 public class JSONService {
 
-    private static final String STRING_ARRAY_SAMPLE = "addressBook.json";
-
-    /**
-     * crete a parameterized method name as writeJson
-     * Method for write JSON file
-     * @param addressBookSystem all persons data stored
-     * @throws Exception
-     */
     public void writeJson(Map<String, Set<ContactPerson>> addressBookSystem) throws Exception {
         /**
          * crete a list and create object name as contactList
@@ -150,5 +143,5 @@ public class JSONService {
         }
         return count;
     }
-}
 
+}

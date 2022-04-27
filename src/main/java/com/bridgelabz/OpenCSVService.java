@@ -18,7 +18,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class OpenCSVService {
-    private static final String STRING_ARRAY_SAMPLE = "addressBook.csv";
+    static final String STRING_ARRAY_SAMPLE = "addressBook.csv";
 
     // Writing to CSV
     public void writetoCsv(Map<String, Set<ContactPerson>> addressBookSystem) throws IOException {
